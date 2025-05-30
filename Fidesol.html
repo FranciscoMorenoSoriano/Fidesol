@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./estiloFidesol.css">
+
+
+</head>
+<body>
+<h2 id="banner">Paises del mundo</h2>
+<section class="contenedorBuscador">
+
+    <select id="tipoBusqueda" aria-label="Tipo de busqueda" class="elementoBuscador">
+            <option value="" disabled selected>Tipo de búsqueda</option>
+            <option value="1">Nombre</option>
+            <option value="2">Continente</option>
+            <option value="3">Idioma</option>
+            <option value="4">Poblacion minima</option>
+            <option value="5">Poblacion maxima</option>
+        </select>
+
+  <div id="BuscadorDefault" class="elementoBuscador">
+    <input type="search"
+               id="buscador"
+               placeholder="Introduce el parametro de busqueda"
+               aria-label="Introduce el parametro de busqueda">
+
+  </div>
+
+  <div id="Buscador1" class="elementoBuscador">
+    <input type="search"
+               id="buscador"
+               placeholder="Introduce el nombre del pais"
+               aria-label="Introduce el parametro de busqueda">
+
+  </div>
+
+    <div id="Buscador2" class="elementoBuscador">
+      <select id="Continentes" aria-label="Continentes" class="elementoBuscador">
+      </select>
+
+    </div>
+    <div id="Buscador3" class="elementoBuscador">
+      <input type="search"
+                 id="buscador"
+                 placeholder="Introduce el idioma del pais"
+                 aria-label="Introduce el parametro de busqueda">
+
+    </div>
+    <div id="Buscador4" class="elementoBuscador">
+      <input type="search"
+                 id="buscador"
+                 placeholder="Introduce la poblacion minima del pais"
+                 aria-label="Introduce el parametro de busqueda">
+
+    </div>
+    <div id="Buscador5" class="elementoBuscador">
+      <input type="search"
+                 id="buscador"
+                 placeholder="Introduce la poblacion maxima del pais"
+                 aria-label="Introduce el parametro de busqueda">
+
+    </div>
+    <button id="mostrarTodoBtn" class="elementoBuscador">Mostrar todos</button>
+
+
+
+</section>
+<div id="resultados"></div>
+<script src="./Fidesol.js"></script>
+</body>
+</html>
